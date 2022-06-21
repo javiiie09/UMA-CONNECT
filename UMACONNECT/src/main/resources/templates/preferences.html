@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+<head>
+	<link rel="icon" href="../img/logo.png" />
+	<title>Completa tu perfil</title>
+	<link rel="stylesheet" th:href="@{css/styles.css}"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b26dea250c.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100" style="height: 103%!important;">
+			<div class="user_card_re">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="../img/logo.png" class="brand_logo" alt="Logo">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form action="/process_preferences" th:object="${user}" method="POST" enctype="utf8">					
+
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								
+							</div>
+                            <div class="container">
+                                <h1 class="tit">Seleccione sus gustos</h1>
+                                <div class="row" style="margin-left: 8%;">
+                                    <div class="col-sm">
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-baseball fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Deporte</label>
+							                <input type="checkbox" name="deporte" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-gamepad fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Videojuegos</label>
+							                <input type="checkbox" name="videojuegos" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-music fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Música</label>
+							                <input type="checkbox" name="musica" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-icons fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Baile</label>
+							                <input type="checkbox" name="baile" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-keyboard fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Programacion</label>
+							                <input type="checkbox" name="programacion" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-palette fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Arte</label>
+							                <input type="checkbox" name="arte" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-tv fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Series</label>
+							                <input type="checkbox" name="series" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-utensils fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Cocina</label>
+							                <input type="checkbox" name="cocina" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-dog fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Animales</label>
+							                <input type="checkbox" name="animales" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-plane fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Viajar</label>
+							                <input type="checkbox" name="viajar" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-chess fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Juegos de mesa</label>
+							                <input type="checkbox" name="juegosmesa" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                        <div class="checkboox">
+                                            <i class="fa-solid fa-book fa-2xl"></i>
+                                            <label class="laabel" for="gustos">Literatura</label>
+							                <input type="checkbox" name="literatura" value="true" class="form-control input_user chuek" >
+                                        </div>
+                                    </div>
+                                  </div>
+						</div>						
+					<div class="d-flex justify-content-center mt-3 register_container" style="margin-left: 9%;">
+				 	<button id="done" type="submit" name="button" class="btn register_btn">Hecho!</button>
+				   </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+        function validateCheckboxes() {
+        if ($('input:checkbox:checked').length < 3) {
+            alert('Por favor seleccione minimo 3 gustos');
+            return false;
+        }
+        };
+        $('#done').click(function(){ validateCheckboxes();});
+    </script>
+</body>
+</html>

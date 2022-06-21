@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" class="bodyhome">
+    
+<head>
+  <link rel="icon" href="../img/logo.png" />
+  <title>Homepage</title>
+  <script src="https://kit.fontawesome.com/b26dea250c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{css/styles.css}"/>
+</head>
+
+<body class="bodyhome">
+<div class="topnav">
+    <a href="/home" style="padding: 0;"><img src="../img/logo.png" alt="" style="width: 20%;"></a>
+    <div class="menu">
+      <a class="active" href="/home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="/chat"><i class="fa-solid fa-comment"></i> Chats</a>
+      <a href="/user"><i class="fa-solid fa-address-card"></i> Perfil</a>
+      <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+    </div>
+</div>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<div>
+  <h1 style="letter-spacing: 1px; margin-left: 10%;">Perfiles afines a tus gustos</h1>
+  <div class="containter">
+    <!-- Card -->
+<div class="card">
+  <div class="pic">
+    <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic0}}">
+  </div>
+  <div class="name-box">
+    <h2 th:text="${nom0}"><span class="age"> 21</span></h2>
+    <p th:text="${fac0}"></p>
+  </div>
+  <div class="gustos">
+    <i class="fa-solid fa-2xl" th:classappend="${gus00}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus01}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus02}"></i>
+  </div>
+  <div class="footer">
+    <a th:href="@{/profile/{id}(id=${us0})}">Ver perfil</a>
+  </div>
+</div>
+<!-- end of card-->
+
+        <!-- Card -->
+<div class="card">
+  <div class="pic">
+    <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic1}}">
+  </div>
+  <div class="name-box">
+    <h2 th:text="${nom1}"><span class="age"> 21</span></h2>
+    <p th:text="${fac1}"></p>
+  </div>
+  <div class="gustos">
+    <i class="fa-solid fa-2xl" th:classappend="${gus10}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus11}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus12}"></i>
+  </div>
+  <div class="footer">
+    <a th:href="@{/profile/{id}(id=${us1})}">Ver perfil</a>
+  </div>
+</div>
+<!-- end of card-->
+    <!-- Card -->
+    <div class="card">
+      <div class="pic">
+        <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic2}}">
+      </div>
+      <div class="name-box">
+        <h2 th:text="${nom2}"><span class="age"> 21</span></h2>
+        <p th:text="${fac2}"></p>
+      </div>
+      <div class="gustos">
+        <i class="fa-solid fa-2xl" th:classappend="${gus20}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus21}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus22}"></i>
+      </div>
+      <div class="footer">
+        <a th:href="@{/profile/{id}(id=${us2})}">Ver perfil</a>
+      </div>
+    </div>
+    <!-- end of card-->
+        <!-- Card -->
+<div class="card">
+  <div class="pic">
+    <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic3}}">
+  </div>
+  <div class="name-box">
+    <h2 th:text="${nom3}"><span class="age"> 21</span></h2>
+    <p th:text="${fac3}"></p>
+  </div>
+  <div class="gustos">
+    <i class="fa-solid fa-2xl" th:classappend="${gus30}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus31}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus32}"></i>
+  </div>
+  <div class="footer">
+    <a th:href="@{/profile/{id}(id=${us3})}">Ver perfil</a>
+  </div>
+</div>
+<!-- end of card-->
+    <!-- Card -->
+    <div class="card">
+      <div class="pic">
+        <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic4}}">
+      </div>
+      <div class="name-box">
+        <h2 th:text="${nom4}"><span class="age"> 21</span></h2>
+        <p th:text="${fac4}"></p>
+      </div>
+      <div class="gustos">
+        <i class="fa-solid fa-2xl" th:classappend="${gus40}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus41}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus42}"></i>
+      </div>
+      <div class="footer">
+        <a th:href="@{/profile/{id}(id=${us4})}">Ver perfil</a>
+      </div>
+    </div>
+    <!-- end of card-->
+        <!-- Card -->
+<div class="card">
+  <div class="pic">
+    <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic5}}">
+  </div>
+  <div class="name-box">
+    <h2 th:text="${nom5}"><span class="age"> 21</span></h2>
+    <p th:text="${fac5}"></p>
+  </div>
+  <div class="gustos">
+    <i class="fa-solid fa-2xl" th:classappend="${gus50}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus51}"></i>
+    <i class="fa-solid fa-2xl" th:classappend="${gus52}"></i>
+  </div>
+  <div class="footer">
+    <a th:href="@{/profile/{id}(id=${us5})}">Ver perfil</a>
+  </div>
+</div>
+<!-- end of card-->
+    <!-- Card -->
+    <div class="card">
+      <div class="pic">
+        <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic6}}">
+      </div>
+      <div class="name-box">
+        <h2 th:text="${nom6}"><span class="age"> 21</span></h2>
+        <p th:text="${fac6}"></p>
+      </div>
+      <div class="gustos">
+        <i class="fa-solid fa-2xl" th:classappend="${gus60}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus61}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus62}"></i>
+      </div>
+      <div class="footer">
+        <a th:href="@{/profile/{id}(id=${us6})}">Ver perfil</a>
+      </div>
+    </div>
+    <!-- end of card-->
+     <!-- Card -->
+     <div class="card">
+      <div class="pic">
+        <img class="imagepic" th:src="@{${'data:image/png;base64,' + pic7}}">
+      </div>
+      <div class="name-box">
+        <h2 th:text="${nom7}"><span class="age"> 21</span></h2>
+        <p th:text="${fac7}"></p>
+      </div>
+      <div class="gustos">
+        <i class="fa-solid fa-2xl" th:classappend="${gus70}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus71}"></i>
+        <i class="fa-solid fa-2xl" th:classappend="${gus72}"></i>
+      </div>
+      <div class="footer">
+        <a th:href="@{/profile/{id}(id=${us7})}">Ver perfil</a>
+      </div>
+    </div>
+    <!-- end of card-->
+</div>   
+   
+</body>
+</html>

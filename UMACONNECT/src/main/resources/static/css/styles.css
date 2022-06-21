@@ -1,0 +1,340 @@
+	body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("../img/bg.jpg"); background-size: cover;
+  }
+  .user_card a{
+    color: white;
+  }
+
+  .user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+  
+  .user_card_re {
+    width: 700px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+ }
+  
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  .brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .form_container {
+    margin-top: 100px;
+  }
+  .login_btn {
+    width: 100%;
+    background: #fe4b49 !important;
+    color: white !important;
+  }
+  .login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+  }
+  .login_container {
+    padding: 0 2rem;
+  }
+  
+  .register_btn {
+    width: 100%;
+    background: #fe4b49 !important;
+    color: white !important;
+  }
+  .register_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+  }
+  .register_container {
+    padding: 0 15rem;
+  }
+  
+  .apply_container {
+    padding: 0 18rem;
+  }
+  
+  .input-group-text {
+    background: #fe4b49 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+  }
+  .input_user,
+  .input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+  }
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #fe4b49 !important;
+  }
+
+  .laabel {
+    width: 7em;
+  }
+  .chuek{
+    width: 1.5em !important;
+    /*margin-left: 2em;*/
+  }
+  .checkboox{
+    display: flex;
+    padding: 0.5em;
+  }
+
+  .checkboox > i{
+    align-self: center;
+    margin-right: 0.4em;
+    width: 50px;
+  }
+  .tit{
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+  }
+
+.bodyhome{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: none;
+  background-color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containter{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  flex: 1 0 20%;
+  border: 5px solid black;
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.pic {
+  height: 55%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagepic {
+  width: 100%;
+  height: 100%;
+}
+
+.name-box {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  padding-top: -0px;
+  padding-left: 20px;
+  color: #454344;
+  margin: 0;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 10px;
+  color: grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.age {
+  padding-left: 6px;
+  font-weight: 200;
+}
+
+.arrow-box {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 50%;
+  text-align: center;
+  top: 12px;
+  left: 12px;
+}
+
+.gustos{
+  height: 100px;
+  display: flex;
+  overflow-wrap: normal;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.arrow {
+  padding-top: 4px;
+  fill: white;
+}
+
+.pic-counter-wrapper {
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  left: 44%;
+  top: 10px;
+}
+#active {
+  background-color: #FE4F68;
+}
+
+.arrow-up {
+  position: absolute;
+
+  fill: #FE4F68;
+  right: 55px;
+  top: -4px;
+  width: 45px;
+  height: 45px;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer a{
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#circleone {
+  background-color: #FF4E68;
+  float: left;
+  margin-left: 20px;
+}
+
+#circletwo {
+  background-color: #40A1FE;
+}
+
+#circlethree {
+  background-color: #5BC495;
+  float: right;
+  margin-right: 20px;
+}
+
+.back {
+  fill: white;
+  padding-top: 20px;
+  padding-right: 6px;
+  width: 30px;
+  height: 30px;
+}
+
+.star {
+  fill: white;
+  padding-top: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.heart {
+  fill: white;
+  padding-top: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-self: end;
+}
+
+/* Change the color of links on hover */
+.topnav .menu a:hover{
+  background-color: #fe4b49;
+  color: #f2f2f2;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fe4b49;
+  color: white;
+}
+
+#foto > img:hover{
+  filter: brightness(0.6);
+}
+
+.profile > span{
+  width: 100%;
+}
+
+.profile {
+  width: 15%;
+}

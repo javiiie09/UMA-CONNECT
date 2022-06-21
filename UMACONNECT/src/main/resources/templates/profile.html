@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+<head>
+	<link rel="icon" href="../img/logo.png" />
+	<title>[[${#httpServletRequest.remoteUser}]]</title>
+	<link rel="stylesheet" th:href="@{../css/styles.css}"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/b26dea250c.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body style="color: #fff;">
+    <div class="topnav">
+        <a href="/home" style="padding: 0; align-self: center;"><img src="../img/logo.png" alt="" style="width: 20%;"></a>
+        <div class="menu">
+          <a href="/home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="/chat"><i class="fa-solid fa-comment"></i> Chats</a>
+          <a class="active" href="/user"><i class="fa-solid fa-address-card"></i> Perfil</a>
+          <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card_re">
+				<div class="d-flex justify-content-center" style="height: 6em;">
+					<div class="brand_logo_container" style="display: flex;">
+						<img th:src="@{${'data:image/jpg;base64,' + pic}}" class="brand_logo" alt="Logo">
+						<form action="/process_profile" th:object="${chat}" method="POST" style="display: flex;">	
+							<div class="input-group mb-3">
+								<div class="input-group-append profile profile" style="width: 100%;">
+									<span style="align-self: flex-end; margin-left: 1em;"><button type="submit" name="button" class="btn register_btn fotobtn">Iniciar Chat</button></span>
+								</div>
+							</div>
+			   			</form>					
+					</div>
+                </div>
+                <div style="align-self: center; font-size: 2em; letter-spacing: 0.05em; text-transform: lowercase; font-weight: 600;">
+                    <span th:text="${u}"></span>
+                </div>
+                <div style="display: flex; flex-direction: column; padding: 2em; font-size: 1.25em;">
+                    <div>
+                        <span th:text="${nom}"></span>&nbsp;<span th:text="${ap1}"></span>&nbsp;<span th:text="${ap2}"></span><span>, </span><span th:text="${ed}">:</span>
+                    </div>
+                    <div>
+                        <span th:text="${facu}"></span>
+                    </div>
+                    <div style="margin: 1em 0; font-style: italic; border: 4px dotted rgb(255, 255, 255); padding: 1em;">
+                        <span th:text="${descrip}"></span>
+                    </div>
+                    <div>
+                        <div class="gustos">
+						    <i class="fa-solid fa-2xl" th:classappend="${gus0}"></i>
+						    <i class="fa-solid fa-2xl" th:classappend="${gus1}"></i>
+						    <i class="fa-solid fa-2xl" th:classappend="${gus2}"></i>
+						    <i class="fa-solid fa-2xl" th:classappend="${gus3}"></i>
+						    <i class="fa-solid fa-2xl" th:classappend="${gus4}"></i>
+						    <i class="fa-solid fa-2xl" th:classappend="${gus5}"></i>
+					  	</div>
+                    </div>
+                </div>
+                    
+				</div>
+            </div>	
+        </div>
+    </div>								
+</body>
+</html>
