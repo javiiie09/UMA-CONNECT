@@ -6,4 +6,4 @@ Actually it use a local database for storage all the users with their informatio
 
 The objective is get the application in a web server with a persistent database and with all the functions we initially proposed.
 
-It's fully made with Java and the Spring-boot framework and the database runs behind H2.
+It's fully made with Java and the Spring-boot framework, and the database runs behind H2.
